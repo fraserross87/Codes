@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <link rel = "stylesheet" href = "C:\Projects\3. Basic Website\Style.css">
+    <link rel = "icon" href = "C:\Projects\3. Basic Website\s.jpg">
+    <title>Skye's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- <span onclick = "openNav()">open</span>  -->
+   <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+
+        <nav class = "nav-bar">
+            <a href = "C:\Projects\3. Basic Website\index.html"><img class = logo src = "C:\Projects\3. Basic Website\s.jpg" height = 80 width = 80></a>
+            <div class = "container" onclick = "myFunction(this);openNav();">
+                <div class = "bar1"></div>
+                <div class = "bar2"></div>
+                <div class = "bar3"></div>
+            </div>
+        
+           <!-- <div class = "links">
+            
+                <div class = "dropdown">
+                    <button class = "dropbtn"><a href = "C:\Projects\3. Basic Website\about.html">About Me</a>
+                    </button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Option 1</a>
+                        <a href = "#">Option 2</a>
+                        <a href = "#">Option 3</a>
+                    </div>            
+                </div>
+                <div class = "dropdown">
+                    <button class = "dropbtn"><a href = "C:\Projects\3. Basic Website\portfolio.html">Portfolio</a>
+                    </button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Option 1</a>
+                        <a href = "#">Option 2</a>
+                        <a href = "#">Option 3</a>
+                    </div>            
+                </div>
+                <div class = "dropdown">
+                    <button class = "dropbtn"><a href = "C:\Projects\3. Basic Website\price.html">Price</a>
+                    </button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Option 1</a>
+                        <a href = "#">Option 2</a>
+                        <a href = "#">Option 3</a>
+                    </div>            
+                </div>
+                <div class = "dropdown">
+                    <button class = "dropbtn"><a href = "C:\Projects\3. Basic Website\reviews.html">Reviews</a>
+                    </button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Option 1</a>
+                        <a href = "#">Option 2</a>
+                        <a href = "#">Option 3</a>
+                    </div>            
+                </div>
+            </div>  -->
+        </nav>
+
+
+    
+    </header>
+
+
+
+    <div id = "mySidenav" class = "sidenav">
+        <a href="javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+        <a href = "C:\Projects\3. Basic Website\about.html">About Me</a>
+        <a href = "C:\Projects\3. Basic Website\portfolio.html">Portfolio</a>
+        <a href = "C:\Projects\3. Basic Website\price.html">Price</a>
+        <a href = "C:\Projects\3. Basic Website\reviews.html">Reviews</a>
+    </div>
+
+    <!-- <span onclick = "openNav()">open</span> -->
+
+
+    <div id = "content">
+        <h2>Here is some more about Website</h2>
+        <p>I'm building this just to prove I can build something</p>
+        <img src = "D:\XUK-811961 Fraser Ross-DATA\Root\Lost & Found\Folder287\0. Phone Dump 2013-\8. Jan 2021 - March 2021\Camera\20210117_150438.jpg" height = 500px width = 1000px>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("content").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("content").style.marginLeft = "0";
+        }
+    </script>
+
+<!-- <script>
+    function myFunction() {
+      var x = document.getElementById("sidenav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script> -->
+
+    <footer>
+        <p>&copy; Fraser Ross 2021</p>
+    </footer>
+</body>
